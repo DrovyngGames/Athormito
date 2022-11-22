@@ -10,7 +10,7 @@
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <Version>0.0.2</Version>
+    <Version>0.0.6</Version>
     <Authors>Drovyng</Authors>
     <Company>DrovyngGames</Company>
   </PropertyGroup>

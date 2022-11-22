@@ -1,6 +1,6 @@
-﻿using Microsoft.Xna.Framework;
+﻿using Athormito.Scripts.Engine;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
 
 namespace Athormito
 {
@@ -37,7 +37,7 @@ namespace Athormito
         }
         public void EngineUpdate()
         {
-
+            EngInput.Update();
         }
         public void EngineDraw()
         {
