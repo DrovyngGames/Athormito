@@ -10,7 +10,7 @@
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <Version>0.0.6</Version>
+    <Version>0.0.13</Version>
     <Authors>Drovyng</Authors>
     <Company>DrovyngGames</Company>
   </PropertyGroup>
@@ -25,5 +25,10 @@
   <ItemGroup>
     <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.0.1641" />
     <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.0.1641" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2-beta3" />
+    <PackageReference Include="NLua" Version="1.6.0" />
   </ItemGroup>
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="XCOPY &quot;$(SolutionDir)mods\&quot; &quot;$(TargetDir)mods\&quot; /S /E /Y" />
+  </Target>
 </Project>

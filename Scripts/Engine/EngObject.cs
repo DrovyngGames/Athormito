@@ -6,6 +6,7 @@ namespace Athormito.Scripts.Engine
     {
         public string id;
 
+        public string mod;
         public string texture;
 
         public bool animated;
